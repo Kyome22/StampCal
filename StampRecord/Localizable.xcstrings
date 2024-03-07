@@ -98,6 +98,7 @@
       }
     },
     "debug" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
