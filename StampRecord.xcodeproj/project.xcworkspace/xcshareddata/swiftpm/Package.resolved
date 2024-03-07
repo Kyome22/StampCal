@@ -1,12 +1,13 @@
 {
+  "originHash" : "41ed1e099983649cb3da210996f2692fa87b60a09a4df40262aa24f8e4eafe70",
   "pins" : [
     {
       "identity" : "emojipalette",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kyome22/EmojiPalette.git",
       "state" : {
-        "revision" : "b55483497941bdc6c0afdcf27b619e7243340b99",
-        "version" : "0.4.1"
+        "revision" : "4fb34a42f903478e59e137d0189eb31ae633d4d1",
+        "version" : "0.4.2"
       }
     },
     {
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kyome22/FlexibleStack.git",
       "state" : {
-        "revision" : "540a4e3e54504f50d04b2ae43fd067ee521f5398",
-        "version" : "0.3.0"
+        "revision" : "7b89c18fe88ef6522232144c332bd6c7366e2b76",
+        "version" : "0.4.0"
       }
     },
     {
@@ -23,10 +24,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Kyome22/InfinitePaging.git",
       "state" : {
-        "revision" : "6b25984510b6ccd22e133a8dc8d890046e7c8e30",
-        "version" : "0.3.0"
+        "revision" : "b61b2332547782176f0ee27cbdd2d388d7f3d429",
+        "version" : "0.5.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

@@ -131,6 +131,7 @@
 		1C827DC82B1E084F00BB4552 /* CaptureScreenshots.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptureScreenshots.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C827DCA2B1E084F00BB4552 /* CaptureScreenshots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureScreenshots.swift; sourceTree = "<group>"; };
 		1C827DD32B20B0F900BB4552 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		1CA62C2C2B9981E600630E8A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		1CAB3EF02AE62B9900BE23F0 /* DayCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarUITests.swift; sourceTree = "<group>"; };
 		1CAB3EF22AE62F9A00BE23F0 /* XCUIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		1CAB3EF52AE63FEF00BE23F0 /* WeekCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekCalendarUITests.swift; sourceTree = "<group>"; };
@@ -321,6 +322,7 @@
 			children = (
 				1CCC691F2ADA7AC8003A8F86 /* StampRecord.entitlements */,
 				1CCC69202ADA7AC8003A8F86 /* Info.plist */,
+				1CA62C2C2B9981E600630E8A /* PrivacyInfo.xcprivacy */,
 				1CCC69292ADA7C43003A8F86 /* Localizable.xcstrings */,
 				1CCC69152ADA7AC8003A8F86 /* Assets.xcassets */,
 				1CCC691C2ADA7AC8003A8F86 /* StampRecord.xcdatamodeld */,
@@ -656,7 +658,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = "Studio Kyome";
 				TargetAttributes = {
 					1C827DC72B1E084F00BB4552 = {
@@ -913,6 +915,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -976,6 +979,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -1233,7 +1237,7 @@
 			repositoryURL = "https://github.com/Kyome22/FlexibleStack.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.3.0;
+				version = 0.4.0;
 			};
 		};
 		1CCC69262ADA7B79003A8F86 /* XCRemoteSwiftPackageReference "EmojiPalette" */ = {
@@ -1241,7 +1245,7 @@
 			repositoryURL = "https://github.com/Kyome22/EmojiPalette.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.4.1;
+				version = 0.4.2;
 			};
 		};
 		1CE66BA92AE54C3E00AC612D /* XCRemoteSwiftPackageReference "InfinitePaging" */ = {
@@ -1249,7 +1253,7 @@
 			repositoryURL = "https://github.com/Kyome22/InfinitePaging.git";
 			requirement = {
 				kind = exactVersion;
-				version = 0.3.0;
+				version = 0.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
