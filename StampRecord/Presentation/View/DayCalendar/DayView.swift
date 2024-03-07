@@ -112,7 +112,15 @@ struct DayView: View {
             }
             .accessibilityIdentifier("DayView_RemoveButton_\(stamp.summary)")
         }
-        .alertSRError(isPresented: $showErrorAlert, srError: srError)
+        .alert(
+            srError?.title ?? "",
+            isPresented: $showErrorAlert,
+            presenting: srError,
+            actions: { _ in },
+            message: { error in
+                Text(error.errorDescription ?? "")
+            }
+        )
     }
 }
 

@@ -32,14 +32,14 @@ enum StampFilterState {
         }
     }
 
-    var label: LocalizedStringKey {
+    var label: String {
         switch self {
         case .allSelected(let count):
-            return LocalizedStringKey("\(count) selected")
+            return String(localized: "\(count) selected")
         case .someSelected(let count):
-            return LocalizedStringKey("\(count) selected")
+            return String(localized: "\(count) selected")
         case .notSelected:
-            return LocalizedStringKey("selectAll")
+            return String(localized: "selectAll")
         }
     }
 

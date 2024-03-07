@@ -90,8 +90,15 @@ struct EditStampView<EVM: EditStampViewModel>: View {
         .onTapGesture {
             focusedField = nil
         }
-        .alertSRError(isPresented: $viewModel.showErrorAlert,
-                      srError: viewModel.srError)
+        .alert(
+            viewModel.srError?.title ?? "",
+            isPresented: $viewModel.showErrorAlert,
+            presenting: viewModel.srError,
+            actions: { _ in },
+            message: { error in
+                Text(error.errorDescription ?? "")
+            }
+        )
     }
 }
 

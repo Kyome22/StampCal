@@ -22,18 +22,17 @@ enum Dummy {
     static let stamps: [Stamp] = {
         let today = Self.startDay
         let info: [(emoji: String, summary: String)] = [
-            ("💪", "dummyTraining"),
-            ("📝", "dummyStudy"),
-            ("🧽", "dummyDishWashing"),
-            ("🏃‍♂️", "dummyRunning"),
-            ("🧺", "dummyLaundry"),
-            ("🎤", "dummySinging"),
-            ("🧹", "dummyCleaning")
+            ("💪", String(localized: "dummyTraining")),
+            ("📝", String(localized: "dummyStudy")),
+            ("🧽", String(localized: "dummyDishWashing")),
+            ("🏃", String(localized: "dummyRunning")),
+            ("🧺", String(localized: "dummyLaundry")),
+            ("🎤", String(localized: "dummySinging")),
+            ("🧹", String(localized: "dummyCleaning"))
         ]
         return info.enumerated().map { (offset, element) in
             let date = Calendar.current.date(byAdding: .day, value: offset, to: today)!
-            let summary = String(localized: .init(element.summary))
-            return Stamp(emoji: element.emoji, summary: summary, createdDate: date)
+            return Stamp(emoji: element.emoji, summary: element.summary, createdDate: date)
         }
     }()
 

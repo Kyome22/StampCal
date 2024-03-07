@@ -6,40 +6,40 @@
  Copyright © 2023 Studio Kyome. All rights reserved.
 */
 
-import SwiftUI
+import Foundation
 
-enum SRError: Error {
-    enum DatabaseError: Error {
+enum SRError: LocalizedError {
+    enum DatabaseError: LocalizedError {
         case failedFetchData
         case failedUpdateDB
 
-        var title: LocalizedStringKey {
+        var title: String {
             switch self {
             case .failedFetchData:
-                return "failedFetchDataErrorTitle"
+                return String(localized: "failedFetchDataErrorTitle")
             case .failedUpdateDB:
-                return "failedUpdateDBErrorTitle"
+                return String(localized: "failedUpdateDBErrorTitle")
             }
         }
 
-        var message: LocalizedStringKey {
-            return "failedDBErrorMessage"
+        var errorDescription: String? {
+            return String(localized: "failedDBErrorMessage")
         }
     }
 
-    enum StampError: Error {
+    enum StampError: LocalizedError {
         case notFoundDataID
         case emojiOverrapping
         case summaryExceeds
 
-        var message: LocalizedStringKey {
+        var errorDescription: String? {
             switch self {
             case .notFoundDataID:
-                return "notFoundDataIDErrorMessage"
+                return String(localized: "notFoundDataIDErrorMessage")
             case .emojiOverrapping:
-                return "emojiOverlappingErrorMessage"
+                return String(localized: "emojiOverlappingErrorMessage")
             case .summaryExceeds:
-                return "summaryExceedsErrorMessage"
+                return String(localized: "summaryExceedsErrorMessage")
             }
         }
     }
@@ -49,33 +49,27 @@ enum SRError: Error {
         case edit
         case delete
 
-        var title: LocalizedStringKey {
+        var title: String {
             switch self {
             case .add:
-                return "unableAddStamp"
+                return String(localized: "unableAddStamp")
             case .edit:
-                return "unableSaveStamp"
+                return String(localized: "unableSaveStamp")
             case .delete:
-                return "unableDeleteStamp"
+                return String(localized: "unableDeleteStamp")
             }
         }
     }
 
-    enum LogError: Error {
+    enum LogError: LocalizedError {
         case skipToUpdate
 
-        var title: LocalizedStringKey {
-            switch self {
-            case .skipToUpdate:
-                return "skipToUpdate"
-            }
+        var title: String {
+            return String(localized: "skipToUpdate")
         }
 
-        var message: LocalizedStringKey {
-            switch self {
-            case .skipToUpdate:
-                return "skipToUpdateErrorMessage"
-            }
+        var errorDescription: String? {
+            return String(localized: "skipToUpdateErrorMessage")
         }
     }
 
@@ -83,7 +77,7 @@ enum SRError: Error {
     case stamp(_ stampError: StampError, _ context: StampContext)
     case log(_ logError: LogError)
 
-    var title: LocalizedStringKey {
+    var title: String {
         switch self {
         case .database(let error):
             return error.title
@@ -94,14 +88,14 @@ enum SRError: Error {
         }
     }
 
-    var message: LocalizedStringKey {
+    var errorDescription: String? {
         switch self {
         case .database(let error):
-            return error.message
+            return error.errorDescription
         case .stamp(let error, _):
-            return error.message
+            return error.errorDescription
         case .log(let error):
-            return error.message
+            return error.errorDescription
         }
     }
 }

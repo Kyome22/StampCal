@@ -34,7 +34,6 @@
       }
     },
     "ascending" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -67,7 +66,6 @@
       }
     },
     "createdDate" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -100,7 +98,6 @@
       }
     },
     "debug" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -165,7 +162,6 @@
       }
     },
     "descending" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -230,7 +226,6 @@
       }
     },
     "dummyCleaning" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -247,7 +242,6 @@
       }
     },
     "dummyDishWashing" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -264,7 +258,6 @@
       }
     },
     "dummyLaundry" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -281,7 +274,6 @@
       }
     },
     "dummyRunning" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -298,7 +290,6 @@
       }
     },
     "dummySinging" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -315,7 +306,6 @@
       }
     },
     "dummyStudy" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -332,7 +322,6 @@
       }
     },
     "dummyTraining" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -365,7 +354,6 @@
       }
     },
     "emojiOverlappingErrorMessage" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -381,24 +369,7 @@
         }
       }
     },
-    "empty" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Empty"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "空っぽ"
-          }
-        }
-      }
-    },
     "failedDBErrorMessage" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -415,7 +386,6 @@
       }
     },
     "failedFetchDataErrorTitle" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -432,7 +402,6 @@
       }
     },
     "failedUpdateDBErrorTitle" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -465,7 +434,6 @@
       }
     },
     "monday" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -530,7 +498,6 @@
       }
     },
     "notFoundDataIDErrorMessage" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -579,7 +546,6 @@
       }
     },
     "productPageURL" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -628,7 +594,6 @@
       }
     },
     "selectAll" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -677,7 +642,6 @@
       }
     },
     "skipToUpdate" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -694,7 +658,6 @@
       }
     },
     "skipToUpdateErrorMessage" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -706,23 +669,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "記録にスタンプがありません。"
-          }
-        }
-      }
-    },
-    "sort" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sort"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "整列"
           }
         }
       }
@@ -792,7 +738,6 @@
       }
     },
     "summaryExceedsErrorMessage" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -809,7 +754,6 @@
       }
     },
     "sunday" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -858,7 +802,6 @@
       }
     },
     "unableDeleteStamp" : {
-      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {

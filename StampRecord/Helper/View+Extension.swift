@@ -26,17 +26,6 @@ extension View {
         return modifier(BackableModifier())
     }
 
-    func alertSRError(isPresented: Binding<Bool>, srError: SRError?) -> some View {
-        return alert(
-            srError?.title ?? "empty",
-            isPresented: isPresented,
-            actions: {},
-            message: {
-                Text(srError?.message ?? "empty")
-            }
-        )
-    }
-
     func onChangeWithMigration<V>(
         of value: V,
         _ action: @escaping () -> Void

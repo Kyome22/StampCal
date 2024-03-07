@@ -73,7 +73,15 @@ struct StampPickerView: View {
                         }
                         .buttonStyle(.cell)
                         .accessibilityIdentifier("StampPickerView_\(stamp.summary)")
-                        .alertSRError(isPresented: $showErrorAlert, srError: srError)
+                        .alert(
+                            srError?.title ?? "",
+                            isPresented: $showErrorAlert,
+                            presenting: srError,
+                            actions: { _ in },
+                            message: { error in
+                                Text(error.errorDescription ?? "")
+                            }
+                        )
                     }
                 }
                 .padding(8)

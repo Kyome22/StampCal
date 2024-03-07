@@ -6,7 +6,7 @@
  Copyright © 2023 Studio Kyome. All rights reserved.
 */
 
-import SwiftUI
+import Foundation
 
 enum WeekStartsAt: Int, CaseIterable, Identifiable {
     case sunday = 7
@@ -14,8 +14,11 @@ enum WeekStartsAt: Int, CaseIterable, Identifiable {
 
     var id: Int { rawValue }
 
-    var label: LocalizedStringKey {
-        return LocalizedStringKey(String(describing: self))
+    var label: String {
+        switch self {
+        case .sunday: return String(localized: "sunday")
+        case .monday: return String(localized: "monday")
+        }
     }
 
     var weekdays: [Weekday] {

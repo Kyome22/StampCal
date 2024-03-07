@@ -6,7 +6,7 @@
  Copyright © 2023 Studio Kyome. All rights reserved.
 */
 
-import SwiftUI
+import Foundation
 
 enum Period: Int, Identifiable, CaseIterable {
     case day
@@ -15,8 +15,12 @@ enum Period: Int, Identifiable, CaseIterable {
 
     var id: Int { rawValue }
 
-    var label: LocalizedStringKey {
-        return LocalizedStringKey(String(describing: self))
+    var label: String {
+        switch self {
+        case .day:   return String(localized: "day")
+        case .week:  return String(localized: "week")
+        case .month: return String(localized: "month")
+        }
     }
 
     var tab: Tab {
